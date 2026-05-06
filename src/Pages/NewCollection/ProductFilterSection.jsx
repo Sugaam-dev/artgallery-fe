@@ -30,7 +30,7 @@ const ProductFilterSection = (props) => {
         // Replace this URL with your actual backend endpoint
         // It passes the category prop as a query parameter
         //new
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/products/?category=${category}`)
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/products/?category=${props.category}`)
         //old
 
         //const response = await fetch(`http://127.0.0.1:8000/products?category=${props.category}`);
